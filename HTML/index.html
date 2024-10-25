@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cambo-Store</title>
+
+    <!-- Code for font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Code for font awesome cdn -->
+
+    <!-- Code for linking css file -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <!-- Code for linking css file -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<!-- header section-->
+<header class="header">
+    <a href="#" class="logo"> <i class="fa fa-shopping-basket"></i> Cambo Store</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">New Arrivals</a>
+        <a href="#review">Review</a>
+    </nav>
+
+    <div class="icon">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        <div class="fa fa-user" id="login-btn"></div>
+    </div>
+
+    <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here...">
+        <label for="search-box" class="fa fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="/image/tomato.png" alt="Tomato">
+            <div class="content">
+                <h3>Tomato</h3>
+                <span class="price">$3/-</span>
+                <span class="quantity">Qty: 1Kg</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="/image/cucumber.png" alt="Cucumber">
+            <div class="content">
+                <h3>Cucumber</h3>
+                <span class="price">$1.5/-</span>
+                <span class="quantity">Qty: 1Kg</span>
+            </div>
+        </div>
+
+        <div class="total">Total: $4.5/-</div>
+        <a href="#" class="btn">Checkout</a>
+    </div>
+
+    <form action="#" class="login-form">
+        <h3>Login Now</h3>
+        <input type="email" placeholder="Your Email" class="box">
+        <input type="password" placeholder="Your Password" class="box">
+        <p>Forgot Your Password? <a href="#">Click Here</a></p>
+        <p>Don't Have An Account? <a href="#">Create Now</a></p>
+        <input type="submit" value="Login Now" class="btn">
+    </form>
+</header>
+<!-- header section-->
+
+<!-- banner section -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Fresh And <span>Organic</span> Products For You</h3>
+        <p>This website is designed by G18-IT-A307</p>
+        <a href="#categories" class="btn">Shop Now</a>
+    </div>
+</section>
+<!-- banner section -->
+
+<!-- our features section -->
+<section class="features" id="features">
+    <h1 class="heading">Our <span>Features</span></h1> 
+    <div class="box-container">
+        <div class="box">
+            <img src="/image/feature1.png" alt="Feature">
+            <h3>Fresh and Organic</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt quas consectetur corrupti.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="box">
+            <img src="/image/delivery1.png" alt="Delivery">
+            <h3>Free Delivery</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt quas consectetur corrupti.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="box">
+            <img src="/image/payment1.png" alt="Payment">
+            <h3>Easy Payment</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt quas consectetur corrupti.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>   
+</section>
+<!-- our features section -->
+
+<!-- our categorise section -->
+<section class="categorise" id="categories">
+    <h1 class="heading">products <span>categorise</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="/image/cate1.webp" alt="">
+            <h3>Vegetables</h3>
+            <p>Upto 45% Off</p>
+            <a href="/Vegetable/Testing.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="/image/freshfruit1.jpg" alt="">
+            <h3>Fresh Fruits</h3>
+            <p>Upto 45% Off</p>
+            <a href="/Fruit/Testing.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="/image/sea-food.jpg" alt="">
+            <h3>Sea Food</h3>
+            <p>Upto 45% Off</p>
+            <a href="/Sea/T1.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="/image/freshmeat.jpg" alt="">
+            <h3>Fresh Meat</h3>
+            <p>Upto 45% Off</p>
+            <a href="/Meat/Teating.html" class="btn">Shop Now</a>
+        </div>
+    </div>
+</section>
+<!-- our categorise section-->
+
+<!-- our products section -->
+<section class="products" id="products">
+    <h1 class="heading">New <span>Arrivals</span></h1>
+
+    <!-- Swiper slider container -->
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <!-- Product 1 -->
+            <div class="swiper-slide box">
+                <img src="/image/new1.jpg" alt="ARO - FROZEN FISH CHIP">
+                <h1>ARO - FROZEN FISH CHIP</h1>
+                <div class="price">$3.5/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn add-to-cart-btn">Add To Cart</a>
+                <!-- Hidden section -->
+                <div class="hidden-elements" style="display: none;">
+                    <div class="quantity-container">
+                        <button class="qty-btn minus-btn">-</button>
+                        <input type="text" class="quantity-input" value="1" readonly>
+                        <button class="qty-btn plus-btn">+</button>
+                    </div>
+                    <select class="size-selector">
+                        <option value="500g">500g</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="swiper-slide box">
+                <img src="/image/new2.jpg" alt="ARO - FROZEM BARBEQUED PORK BUN">
+                <h1>ARO - FROZEM BARBEQUED PORK BUN</h1>
+                <div class="price">$4.90/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn add-to-cart-btn">Add To Cart</a>
+                <!-- Hidden section -->
+                <div class="hidden-elements" style="display: none;">
+                    <div class="quantity-container">
+                        <button class="qty-btn minus-btn">-</button>
+                        <input type="text" class="quantity-input" value="1" readonly>
+                        <button class="qty-btn plus-btn">+</button>
+                    </div>
+                    <select class="size-selector">
+                        <option value="500g">37g*15Pcs</option>
+                        
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="swiper-slide box">
+                <img src="/image/new3.jpg" alt="Aro - Frozen fish tofu">
+                <h1>Aro - Frozen fish tofu</h1>
+                <div class="price">$6.86/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn add-to-cart-btn">Add To Cart</a>
+                <!-- Hidden section -->
+                <div class="hidden-elements" style="display: none;">
+                    <div class="quantity-container">
+                        <button class="qty-btn minus-btn">-</button>
+                        <input type="text" class="quantity-input" value="1" readonly>
+                        <button class="qty-btn plus-btn">+</button>
+                    </div>
+                    <select class="size-selector">
+                        <option value="1000g">1000g</option>    
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="swiper-slide box">
+                <img src="/image/new4.png" alt="Aro - Frozen Peach">
+                <h1>Aro - Frozen Peach</h1>
+                <div class="price">$3.50/-</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn add-to-cart-btn">Add To Cart</a>
+                <!-- Hidden section -->
+                <div class="hidden-elements" style="display: none;">
+                    <div class="quantity-container">
+                        <button class="qty-btn minus-btn">-</button>
+                        <input type="text" class="quantity-input" value="1" readonly>
+                        <button class="qty-btn plus-btn">+</button>
+                    </div>
+                    <select class="size-selector">
+                        <option value="1000g">1000g</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- our products section -->
+
+<!-- review section -->
+ <section class="review" id="review">
+    <h1 class="heading">Customer's <span>Review</span></h1>
+
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="/image/customer-5.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur
+                   adipisicing elit. Sunt placeat temporibus
+                   maiores debitis quam eum.</p>
+                   <h3>Gemini</h3>
+                   <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/image/customer-2.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur
+                   adipisicing elit. Sunt placeat temporibus
+                   maiores debitis quam eum.</p>
+                   <h3>Fourth</h3>
+                   <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/image/customer-3.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur
+                   adipisicing elit. Sunt placeat temporibus
+                   maiores debitis quam eum.</p>
+                   <h3>Meen</h3>
+                   <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/image/customer-4.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur
+                   adipisicing elit. Sunt placeat temporibus
+                   maiores debitis quam eum.</p>
+                   <h3>Ping Ping</h3>
+                   <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="/image/customer-6.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur
+                   adipisicing elit. Sunt placeat temporibus
+                   maiores debitis quam eum.</p>
+                   <h3>Ling Ling</h3>
+                   <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+ </section>
+<!-- our review section -->
+
+<!-- footer section -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Cambo Store <i class="fa fa-shopping-basket"></i></h3>
+            <p>Feel free to follow us on our social media platforms. All 
+                the links are given below.</p>
+
+            <div class="share">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"> <i class="fa fa-phone"></i> +855 81 35 55 28</a>
+            <a href="#" class="links"> <i class="fa fa-phone"></i> +855 97 35 55 28</a>
+            <a href="#" class="links"> <i class="fa fa-envelope"></i> cambostore@gmail.com</a>
+            <a href="#" class="links"> <i class="fa fa-map-marker"></i> Phnom Penh, Cambodia</a>
+        </div>
+
+        
+
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Subscribe for the latest updates</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+            <img src="/image/visa.png" alt="" class="payment-img">
+        </div>
+    </div>
+</section>
+
+<!-- footer section -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="/JS/script.js"></script>
+
+
+
+</body>
+</html>

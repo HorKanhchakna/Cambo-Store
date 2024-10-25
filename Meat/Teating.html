@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+    
+        .heading {
+            font-size: 2.5em;
+            color: #333;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0;
+        }
+    
+        .heading span {
+            color: #e67e22;
+        }
+    
+        .heading::after {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            width: 50px;
+            height: 4px;
+            background-color: #e67e22;
+            border-radius: 2px;
+        }
+    
+        .product-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+    
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            width: 100%;
+            max-width: 250px;
+            margin: 10px;
+        }
+    
+        .product-card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    
+        .product-card img {
+            width: 200px;
+            height: 200px;
+        }
+    
+        .product-card h3 {
+            font-size: 1.2em;
+            color: #333;
+        }
+    
+        .product-card p {
+            color: #555;
+            margin: 10px 0;
+        }
+    
+        .product-card .rating span {
+            color: gold;
+        }
+    
+        .quantity-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+    
+        .quantity-btn {
+            background-color: #ddd;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+    
+        .quantity {
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+    
+        .size-container {
+            margin: 10px 0;
+        }
+    
+        .size-selector {
+            padding: 5px;
+            font-size: 1em;
+        }
+    
+        .add-to-cart-btn {
+            background-color: white;
+            color: #333;
+            border: 1px solid #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    
+        .add-to-cart-btn:hover {
+            background-color: green;
+            color: white;
+        }
+    
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        .product-section {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-card {
+            max-width: 300px;
+        }
+
+        .heading {
+            font-size: 2em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .product-card {
+            max-width: 100%;
+            margin: 10px 0;
+            padding: 20px;
+        }
+
+        .product-card img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .quantity-container {
+            flex-direction: column;
+        }
+
+        .heading {
+            font-size: 1.8em;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Our <span>Products</span></h1>
+
+    <section class="product-section">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="./Image/1.jpg" alt="Fresh Cucumber" class="product-image">
+            <h3>Australian Beef</h3>
+            <p>$4.5/- - $5.5/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+        
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="./Image/3.webp" alt="Fresh Tomato" class="product-image">
+            <h3>Australian Beef Ribs</h3>
+            <p>$2.00/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="./Image/4.webp" alt="Fresh Tomato" class="product-image">
+            <h3>Australian Angus M2</h3>
+            <p>$3.5/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="./Image/5.webp" alt="Fresh Tomato" class="product-image">
+            <h3>Chicken thighs</h3>
+            <p>$5.00/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="./Image/6.png" alt="Fresh Cucumber" class="product-image">
+            <h3>NZ Prime Steer Rib Eye Rolls</h3>
+            <p>$4.5/- - $6.00/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="./Image/7.png" alt="Fresh Tomato" class="product-image">
+            <h3>Australia Beef *A* Ribeye</h3>
+            <p>$2.0/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="./Image/8.jpg" alt="Fresh Tomato" class="product-image">
+            <h3>Australia Beef *S*.</h3>
+            <p>$5.5/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="./Image/9.png" alt="Fresh Tomato" class="product-image">
+            <h3>NZ Prime Steer Striploin.</h3>
+            <p>$4.5/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="./Image/10.png" alt="Fresh Cucumber" class="product-image">
+            <h3>Chicken Leg Quarter</h3>
+            <p>$3.5/- - $4.5/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="./Image/11.png" alt="Fresh Tomato" class="product-image">
+            <h3>Duck Leg Whole</h3>
+            <p>$5.5/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="./Image/12.png" alt="Fresh Tomato" class="product-image">
+            <h3>Chicken Thigh</h3>
+            <p>$2.00/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="./Image/13.png" alt="Fresh Tomato" class="product-image">
+            <h3>Frozen Chicken</h3>
+            <p>$5.5/-</p>
+            <div class="rating">
+                <span>★★★★☆</span>
+            </div>
+            <div class="quantity-container">
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <div class="size-container">
+                <label for="size">Size: </label>
+                <select class="size-selector" name="size">
+                    <option value="small">500g</option>
+                    <option value="medium">1000g</option>
+                    <option value="large">1500g</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const quantityBtns = document.querySelectorAll(".quantity-btn");
+            const addToCartBtns = document.querySelectorAll(".add-to-cart-btn");
+
+            // Handle quantity change
+            quantityBtns.forEach(btn => {
+                btn.addEventListener("click", (e) => {
+                    const quantityElement = btn.parentNode.querySelector(".quantity");
+                    let quantity = parseInt(quantityElement.textContent);
+
+                    if (btn.classList.contains("plus")) {
+                        quantity++;
+                    } else if (btn.classList.contains("minus") && quantity > 1) {
+                        quantity--;
+                    }
+
+                    quantityElement.textContent = quantity;
+                });
+            });
+
+            // Handle Add to Cart functionality
+            addToCartBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const productCard = btn.closest(".product-card");
+                    const productName = productCard.querySelector("h3").textContent;
+                    const quantity = productCard.querySelector(".quantity").textContent;
+                    const size = productCard.querySelector(".size-selector").value;
+
+                    alert(`Added ${quantity} ${size} ${productName}(s) to the cart!`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
